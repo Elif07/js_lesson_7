@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <title>Task 0</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 0</h1>
+         <p>Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.</p>
+         <script>
+            //вводимо дані
+            let monthNumber = parseInt(prompt("введіть число від 1 до 12"))
+            function getSeason(month) {
+               //визначаємо назви місяця за його номером.
+                  if (month === 1 || month === 2 || month === 12) {
+                     return 'зима'
+                  } else if
+                     (month === 3 || month === 4 || month === 5){
+                     return 'весна'
+                  } else if
+                     (month === 6 || month === 7 || month === 8) {
+                     return 'літо'
+                  }
+                  else if
+                     (month === 9 || month === 10 || month === 11) {
+                     return 'осінь'
+                  }
+                  else {return 'введіть число від 1 до 12'} 
+               }
+               //виводимо результат
+               let nameOfSeason = getSeason(monthNumber)
+               document.write(`${nameOfSeason}`)
+               // console.log(getSeason(monthNumber));
+         </script>
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

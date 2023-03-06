@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 3</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 3</h1>
+         <p>Створити окремі функції, які для 4 чисел знаходять:
+         1)суму;
+         2)добуток;
+         3)середнє арифметичне;
+         4)мінімальне значення.</p>
+         <script>
+          //вводимо дані
+            const num1 = parseInt(prompt("Введіть перше число "))
+            const num2 = parseInt(prompt("Введіть друге число "))
+            const num3 = parseInt(prompt("Введіть третє число "))
+            const num4 = parseInt(prompt("Введіть четверте число "))
+            //знаходимо результат
+          function sum(num1,num2,num3,num4) {
+            return num1 + num2 + num3 + num4
+          }
+          function product(num1, num2, num3, num4) {
+               return num1 * num2 * num3 * num4
+            }
+          function average(num1, num2, num3, num4) {
+               return (num1 + num2 + num3 + num4)/4
+            }
+          function min(num1, num2, num3, num4) {
+               return Math.min(num1, num2, num3, num4)
+            }
+          const sumResult = sum(num1,num2,num3,num4)
+          const productResult = sum(num1, num2, num3, num4)
+          const averageResult = sum(num1, num2, num3, num4)
+          const minResult = sum(num1, num2, num3, num4)
+          //виводимо результат
+          document.write(`<ol><li>сума=${sumResult};</li><li>добуток=${productResult};</li><li>середнє арифметичне=${averageResult};</li><li>мінімальне значення=${minResult}.</li></ol>`)
+         </script>
+         
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

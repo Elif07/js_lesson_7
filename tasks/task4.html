@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Task 4 </title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 4</h1>
+         <p>Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість
+         додатних, кількість більших за 100.</p>
+         <script>
+             //вводимо дані
+               const num1 = parseInt(prompt("Введіть число 1"))
+               const num2 = parseInt(prompt("Введіть число 2"))
+               const num3 = parseInt(prompt("Введіть число 3"))
+               //знаходимо результат
+               function findNumber(num1, num2, num3) {
+                  let evenCount = 0
+                  let positiveCount = 0
+                  let over100Count = 0
+                  if (num1 % 2 === 0) evenCount++
+                  if (num2 % 2 === 0) evenCount++
+                  if (num3 % 2 === 0) evenCount++
+
+                  if (num1 > 0) positiveCount++
+                  if (num2 > 0) positiveCount++
+                  if (num3 > 0) positiveCount++
+
+                  if (num1 > 100) over100Count++
+                  if (num2 > 100) over100Count++
+                  if (num3 > 100) over100Count++
+                  return (`кількість парних = ${evenCount}<br>кількість додатніх = ${positiveCount}<br>кількість більших за 100 = ${over100Count}`)
+                  }
+                  const result = findNumber(num1, num2, num3)
+                  //виводимо результат
+                  document.write(`${result}`)
+         </script>
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

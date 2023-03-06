@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Task 9</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 9</h1>
+         <p>Дано покази температур (довільна кількість). Розробити функцію, яка дозволить підрахувати кількість від’ємних показів
+         температури.</p>
+         <script>
+            function countMinusTemperatures(temperatures) {
+                  let count = 0
+                  for (let i = 0; i < temperatures.length; i++) {
+                     if (temperatures[i] < 0) {
+                        count++
+                     }
+                  }
+                  return count
+               } 
+               const temperatures = [1, -2, 3, -4, 5, -6]
+                  const result = countMinusTemperatures(temperatures)
+                  document.write(`Дано покази температур: ${temperatures}<br> Кількість від\'ємних показів:  ${result}`)  
+         </script>
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

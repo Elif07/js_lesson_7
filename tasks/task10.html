@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Task 10</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 10</h1>
+         <p>Дано покази температур (довільна кількість). Розробити функцію, яка дозволить знайти середнє значення для додатних
+         показів температури.</p>
+         <script>
+          function countPlusTemperatures(temperatures) {
+               let count = 0
+               let sum = 0
+               for (let i = 0; i < temperatures.length; i++) {
+                  if (temperatures[i] > 0) {
+                     sum += temperatures[i]
+                     count++
+                  }
+               }
+               return sum/count
+            }
+            const temperatures = [7, -2, 3, -4, 5, -6]
+            const average = countPlusTemperatures(temperatures)
+            document.write(`Дано покази температур: ${temperatures}<br> середнє значення додатніх показів температури:  ${average}`) 
+            
+         </script>
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>
